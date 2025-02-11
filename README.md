@@ -1,8 +1,10 @@
 git clone https://github.com/<your-username>/mystic-tarot.git
+```bash
 cd mystic-tarot
 ```
 
-2. Install dependencies:
+
+2. Install dependencies
 ```bash
 npm install
 ```
