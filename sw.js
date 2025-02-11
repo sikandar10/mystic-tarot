@@ -1,13 +1,14 @@
 const CACHE_NAME = 'tarot-app-v1';
+const BASE_URL = '/mystic-tarot';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/src/main.tsx',
-        '/src/App.tsx',
+        `${BASE_URL}/`,
+        `${BASE_URL}/index.html`,
+        `${BASE_URL}/assets/index.css`,
+        `${BASE_URL}/assets/index.js`,
       ]);
     })
   );
