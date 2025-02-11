@@ -5,7 +5,8 @@ import { Logo } from "@/components/Logo";
 import { ALL_CARDS, shuffleCards, type TarotCard } from "@/lib/tarotData";
 
 export default function TarotReadingPage() {
-  const [cards, setCards] = useState(ALL_CARDS);
+  // Initialize with ALL_CARDS directly since we're not fetching from an API anymore
+  const [cards, setCards] = useState(shuffleCards(ALL_CARDS));
   const [selectedCards, setSelectedCards] = useState<TarotCard[]>([]);
   const [showCarousel, setShowCarousel] = useState(false);
 
