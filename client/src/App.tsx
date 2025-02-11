@@ -10,7 +10,7 @@ import NotFound from "@/pages/not-found";
 
 function Router() {
   return (
-    <Switch>
+    <Switch base="/mystic-tarot">
       <Route path="/" component={TarotReadingPage} />
       <Route path="/history" component={HistoryPage} />
       <Route path="/settings" component={SettingsPage} />
